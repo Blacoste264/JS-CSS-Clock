@@ -14,7 +14,8 @@ body {
     align-items: center;
 }
 .clock {
-    background-color: white;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/f3/fb/1c/f3fb1cf91204e3766547d543aa9bb13b.gif);
+    background-size: cover;
     width: 20rem;
     height: 20rem;
     border:5px solid black;
@@ -36,7 +37,7 @@ body {
 }
 .hand {
     width:50%;
-    height:6px;
+    height:4px;
     background:black;
     position: absolute;
     top:50%;
