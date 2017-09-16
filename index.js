@@ -1,7 +1,9 @@
+// Select divs to display hands of clock
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
+// Retrieve date object and set time
 function setDate() {
     const now = new Date();
     const seconds = now.getSeconds();
@@ -14,5 +16,6 @@ function setDate() {
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
+// every second, set new time
 setInterval(setDate, 1000);
 setDate();
